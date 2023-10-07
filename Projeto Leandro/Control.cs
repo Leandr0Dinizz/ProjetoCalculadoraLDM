@@ -49,7 +49,10 @@ namespace Projeto_Leandro
                               "\n2.  Subtrair" +
                               "\n3.  Divisão" +
                               "\n4.  Multiplicar"+
+                              "\n5.  Potência"+
+                              "\n6.  Raiz 1° número"+
                               "\n\n.  Escolha uma das opções acima: ");
+    
             ConsultarOpcao = Convert.ToInt32(Console.ReadLine());       
         }//Fim método menu
 
@@ -99,7 +102,16 @@ namespace Projeto_Leandro
                         ColetarNum2();
                         Console.WriteLine("A multiplicação dos números digitados é: " + calc.Multiplicar());
                         break;
+                    case 5:
+                        ColetarNum1();
+                        ColetarNum2();
+                        Console.WriteLine("A potência é: " + calc.Potencia());
+                    break;
 
+                    case 6:
+                        ColetarNum1();
+                        Console.WriteLine("A Raiz do primeiro número é: " + calc.Raiz());
+                    break;
                     default:
                         Console.WriteLine("Opção escolhida não é válida, Tente novamente!");
                         break;

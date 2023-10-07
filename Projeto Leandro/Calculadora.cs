@@ -73,6 +73,20 @@ namespace Projeto_Leandro
             }
         }//Fim dividir
 
+        public double Potencia()
+        {
+
+            return Math.Pow(Consultarnum1, Consultarnum2);
+
+        }//Fim do método
+
+        public double Raiz()
+        {
+            return Math.Sqrt(Consultarnum1);
+
+        }//Fim da raiz
+
+
 
     }//Fim da classe
 }//Fim do projeto
